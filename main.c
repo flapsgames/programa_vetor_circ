@@ -32,11 +32,16 @@
 char menu(int i)
 {
     // DEFINIÇÃO DE VARIÁVEIS
+    char limpar;
+    
+    // limpa o buffer quando há uma mensagem de erro.
+    limpar = getchar();
+
     printf("\n ------------------");
     printf("\n\t MENU \n Escolha uma opcao: ");
     printf("\n [A] area ");
     printf("\n [P] perimetro \n ");
-    getchar();
+    //getchar();
     // captura a escolha do usuário e salva na respectiva posição do vetor escolha.
     escolha[i] = getchar();
     switch(escolha[i])
